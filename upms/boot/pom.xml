@@ -12,5 +12,14 @@
     <groupId>com.gls.gemini.upms.boot</groupId>
     <artifactId>gemini-upms-boot</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.gls.gemini.boot.core</groupId>
+            <artifactId>gemini-boot-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gls.gemini.upms.sdk</groupId>
+            <artifactId>gemini-upms-sdk</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -12,5 +12,30 @@
     <artifactId>gemini-pom</artifactId>
     <packaging>pom</packaging>
 
+    <properties>
+        <gemini.version>0.0.1-SNAPSHOT</gemini.version>
+    </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- gemini-boot -->
+            <dependency>
+                <groupId>com.gls.gemini.boot.core</groupId>
+                <artifactId>gemini-boot-core</artifactId>
+                <version>${gemini.version}</version>
+            </dependency>
+            <!-- gemini-starter -->
+            <dependency>
+                <groupId>com.gls.gemini.starter.web</groupId>
+                <artifactId>gemini-starter-web</artifactId>
+                <version>${gemini.version}</version>
+            </dependency>
+            <!-- gemini-upms -->
+            <dependency>
+                <groupId>com.gls.gemini.upms.sdk</groupId>
+                <artifactId>gemini-upms-sdk</artifactId>
+                <version>${gemini.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
