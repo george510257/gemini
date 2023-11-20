@@ -30,6 +30,12 @@
                 <artifactId>gemini-starter-web</artifactId>
                 <version>${gemini.version}</version>
             </dependency>
+            <!-- gemini-sdk -->
+            <dependency>
+                <groupId>com.gls.gemini.sdk.core</groupId>
+                <artifactId>gemini-sdk-core</artifactId>
+                <version>${gemini.version}</version>
+            </dependency>
             <!-- gemini-upms -->
             <dependency>
                 <groupId>com.gls.gemini.upms.sdk</groupId>
