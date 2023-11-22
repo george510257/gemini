@@ -5,6 +5,9 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 核心自动配置
+ */
 @Configuration
 @ComponentScan
 @EnableConfigurationProperties({ResultProperties.class})
