@@ -15,6 +15,7 @@
         <module>boot</module>
         <module>sdk</module>
         <module>starter</module>
+        <module>common</module>
     </modules>
 
     <dependencyManagement>

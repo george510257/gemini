@@ -34,6 +34,8 @@
         <spring-shell.version>3.1.5</spring-shell.version>
         <timefold-solver.version>1.3.0</timefold-solver.version>
         <vaadin.version>24.2.3</vaadin.version>
+
+        <hutool.version>5.8.22</hutool.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -120,6 +122,12 @@
                 <version>${timefold-solver.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

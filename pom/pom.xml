@@ -18,6 +18,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- gemini-common -->
+            <dependency>
+                <groupId>com.gls.gemini.common.bean</groupId>
+                <artifactId>gemini-common-bean</artifactId>
+                <version>${gemini.version}</version>
+            </dependency>
             <!-- gemini-boot -->
             <dependency>
                 <groupId>com.gls.gemini.boot.core</groupId>

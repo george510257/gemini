@@ -1,0 +1,4 @@
+gemini:
+  web:
+    result:
+      enable: true
