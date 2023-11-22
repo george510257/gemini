@@ -12,5 +12,10 @@
     <groupId>com.gls.gemini.sdk.core</groupId>
     <artifactId>gemini-sdk-core</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.gls.gemini.common.bean</groupId>
+            <artifactId>gemini-common-bean</artifactId>
+        </dependency>
+    </dependencies>
 </project>

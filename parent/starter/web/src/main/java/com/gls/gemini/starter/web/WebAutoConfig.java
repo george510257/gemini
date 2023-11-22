@@ -1,6 +1,6 @@
 package com.gls.gemini.starter.web;
 
-import com.gls.gemini.starter.web.properties.ResultProperties;
+import com.gls.gemini.starter.web.result.ResultProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

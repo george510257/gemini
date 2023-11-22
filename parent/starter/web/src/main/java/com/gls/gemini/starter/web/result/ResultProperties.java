@@ -1,4 +1,4 @@
-package com.gls.gemini.starter.web.properties;
+package com.gls.gemini.starter.web.result;
 
 import com.gls.gemini.common.bean.constants.CommonConstants;
 import com.gls.gemini.common.bean.domain.BaseProperties;

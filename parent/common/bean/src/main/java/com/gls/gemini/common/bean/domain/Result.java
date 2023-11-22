@@ -1,6 +1,6 @@
 package com.gls.gemini.common.bean.domain;
 
-import com.gls.gemini.common.bean.enums.ResultEnum;
+import com.gls.gemini.common.bean.enums.BaseEnum;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -41,14 +41,14 @@ public class Result<T> implements Serializable {
         this.data = data;
     }
 
-    public Result(ResultEnum resultEnum) {
-        this.code = resultEnum.getCode();
-        this.msg = resultEnum.getMessage();
+    public Result(BaseEnum baseEnum) {
+        this.code = baseEnum.getCode();
+        this.msg = baseEnum.getMessage();
     }
 
-    public Result(ResultEnum resultEnum, T data) {
-        this.code = resultEnum.getCode();
-        this.msg = resultEnum.getMessage();
+    public Result(BaseEnum baseEnum, T data) {
+        this.code = baseEnum.getCode();
+        this.msg = baseEnum.getMessage();
         this.data = data;
     }
 }

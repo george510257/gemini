@@ -1,6 +1,7 @@
 package com.gls.gemini.common.bean.util;
 
 import com.gls.gemini.common.bean.domain.Result;
+import com.gls.gemini.common.bean.enums.BaseEnum;
 import com.gls.gemini.common.bean.enums.ResultEnum;
 import lombok.experimental.UtilityClass;
 
@@ -39,11 +40,11 @@ public class ResultUtil {
         return new Result<>(code, msg, data);
     }
 
-    public <T> Result<T> failed(ResultEnum resultEnum) {
-        return new Result<>(resultEnum);
+    public <T> Result<T> failed(BaseEnum baseEnum) {
+        return new Result<>(baseEnum);
     }
 
-    public <T> Result<T> failed(ResultEnum resultEnum, T data) {
-        return new Result<>(resultEnum, data);
+    public <T> Result<T> failed(BaseEnum baseEnum, T data) {
+        return new Result<>(baseEnum, data);
     }
 }

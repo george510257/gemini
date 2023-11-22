@@ -1,0 +1,87 @@
+POST http://localhost:8080/demo/getDemo2
+Content-Type: application/json
+Content-Length: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "george"
+}
+
+<> 2023-11-22T160715.500.json
+
+###
+
+POST http://localhost:8080/demo/getDemo
+Content-Type: application/json
+Content-Length: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "george"
+}
+
+<> 2023-11-22T160610.200.json
+
+###
+
+GET http://localhost:8080/demo/test/george
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-22T154516.200.txt
+
+###
+
+GET http://localhost:8080/demo/test/george
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-22T140459.200.txt
+
+###
+
+GET http://localhost:8080/demo/test/george
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-22T140345.200.txt
+
+###
+
+GET http://localhost:8080/demo/test/george
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-22T140309.200.txt
+
+###
+
+GET http://localhost:8080/demo/test/george
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-22T140152.200.txt
+
+###
+
+GET http://localhost:8080/demo/test/george
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-21T093511.200.txt
+
+###
+

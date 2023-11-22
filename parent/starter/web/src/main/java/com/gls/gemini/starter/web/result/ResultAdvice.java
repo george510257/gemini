@@ -1,31 +1,32 @@
-package com.gls.gemini.starter.web.support;
+package com.gls.gemini.starter.web.result;
 
 import cn.hutool.json.JSONUtil;
 import com.gls.gemini.common.bean.constants.CommonConstants;
 import com.gls.gemini.common.bean.domain.Result;
 import com.gls.gemini.common.bean.util.ResultUtil;
-import com.gls.gemini.starter.web.properties.ResultProperties;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
  * 返回值处理
  */
+@Data
 @Slf4j
 @RestControllerAdvice(basePackages = CommonConstants.PACKAGE_PREFIX)
 public class ResultAdvice implements ResponseBodyAdvice<Object> {
 
     private final ResultProperties resultProperties;
 
-    public ResultAdvice(ResultProperties resultProperties) {
-        this.resultProperties = resultProperties;
-    }
 
     /**
      * 是否支持
@@ -83,5 +84,31 @@ public class ResultAdvice implements ResponseBodyAdvice<Object> {
             return body;
         }
         return ResultUtil.success(body);
+    }
+
+    /**
+     * 异常处理
+     *
+     * @param e 异常
+     * @return 处理后的返回值
+     */
+    @ExceptionHandler(Exception.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public Result<?> exceptionHandler(Exception e) {
+        log.error("exceptionHandler:{}", e.getMessage(), e);
+        return ResultUtil.failed(e.getMessage());
+    }
+
+    /**
+     * 业务异常处理
+     *
+     * @param e 异常
+     * @return 处理后的返回值
+     */
+    @ExceptionHandler(ResultException.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public Result<?> exceptionHandler(ResultException e) {
+        log.error("exceptionHandler:{}", e.getMessage(), e);
+        return ResultUtil.failed(e.getMessage()).setCode(e.getCode());
     }
 }
