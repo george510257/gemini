@@ -5,8 +5,10 @@ import com.gls.gemini.starter.web.jackson.GeminiModule;
 import com.gls.gemini.starter.web.request.RequestBodyFilter;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 
 import java.time.ZoneId;
 import java.util.Locale;
@@ -44,5 +46,17 @@ public class WebConfig {
         registration.setName("requestBodyFilter");
         registration.setOrder(Integer.MIN_VALUE);
         return registration;
+    }
+
+    /**
+     * 国际化配置
+     *
+     * @return 国际化配置
+     */
+    @Bean
+    public MessageSource messageSource() {
+        ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
+        messageSource.setBasename("classpath:i18n/messages");
+        return messageSource;
     }
 }
