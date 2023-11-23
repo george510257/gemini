@@ -12,8 +12,16 @@ import java.time.ZoneId;
 import java.util.Locale;
 import java.util.TimeZone;
 
+/**
+ * web配置
+ */
 @Configuration
 public class WebConfig {
+    /**
+     * Jackson 配置
+     *
+     * @return
+     */
     @Bean
     public Jackson2ObjectMapperBuilderCustomizer customizer() {
         return builder -> builder.locale(Locale.CHINA)

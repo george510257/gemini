@@ -20,6 +20,9 @@ import java.time.LocalTime;
  */
 public class GeminiModule extends SimpleModule {
 
+    /**
+     * 构造方法
+     */
     public GeminiModule() {
         super(PackageVersion.VERSION);
         // ======================= 时间序列化规则 ===============================

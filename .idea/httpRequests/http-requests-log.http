@@ -1,5 +1,21 @@
 POST http://localhost:8080/demo/getDemo
 Content-Type: application/json
+Content-Length: 60
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "george",
+  "localDate": "2023-11-23 09:43:09"
+}
+
+<> 2023-11-23T104127.200.json
+
+###
+
+POST http://localhost:8080/demo/getDemo
+Content-Type: application/json
 Content-Length: 51
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
