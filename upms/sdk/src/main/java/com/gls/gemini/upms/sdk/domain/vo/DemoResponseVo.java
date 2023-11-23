@@ -22,6 +22,8 @@ public class DemoResponseVo extends BaseVo {
      * 描述
      */
     private String description;
-
+    /**
+     * 注册时间
+     */
     private LocalDateTime registerTime = LocalDateTime.now();
 }
