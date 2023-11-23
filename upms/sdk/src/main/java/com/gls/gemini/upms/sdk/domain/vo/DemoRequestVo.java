@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
@@ -20,5 +19,5 @@ public class DemoRequestVo extends BaseVo {
      */
     private String name;
 
-    private LocalDate localDate;
+    private LocalDateTime localDate;
 }
