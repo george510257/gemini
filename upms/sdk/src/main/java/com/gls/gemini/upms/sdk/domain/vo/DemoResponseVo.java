@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.time.LocalDateTime;
+
 /**
  * demo响应vo
  */
@@ -20,4 +22,6 @@ public class DemoResponseVo extends BaseVo {
      * 描述
      */
     private String description;
+
+    private LocalDateTime registerTime = LocalDateTime.now();
 }

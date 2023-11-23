@@ -14,7 +14,7 @@ public class BaseProperties implements Serializable {
     /**
      * 是否生效
      */
-    private boolean enable = false;
+    private boolean enable = true;
     /**
      * 扩展属性
      */
