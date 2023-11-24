@@ -1,6 +1,6 @@
 package com.gls.gemini.upms.sdk.domain.vo;
 
-import com.gls.gemini.common.bean.domain.BaseVo;
+import com.gls.gemini.sdk.core.vo.BaseVo;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;

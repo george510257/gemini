@@ -1,11 +1,20 @@
 package com.gls.gemini.starter.web.result;
 
 import com.gls.gemini.common.bean.enums.BaseEnum;
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+/**
+ * 结果异常
+ */
+@Getter
 public class ResultException extends RuntimeException {
+    /**
+     * 错误码
+     */
     private final Integer code;
+    /**
+     * 错误信息
+     */
     private final String message;
 
     public ResultException(Integer code, String message) {

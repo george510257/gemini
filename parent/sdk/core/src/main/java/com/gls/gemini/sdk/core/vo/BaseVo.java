@@ -1,4 +1,4 @@
-package com.gls.gemini.common.bean.domain;
+package com.gls.gemini.sdk.core.vo;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
