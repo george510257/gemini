@@ -1,0 +1,30 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Build outputs
+target/
+dist/
+node_modules/
+*.tsbuildinfo
+.npm-store/
+.pnpm-store/
+
+# Maven flatten plugin
+**/.flattened-pom.xml
+
+# OMC (oh-my-claudecode)
+**/.omc/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env.local
+.env.*.local
+.superpowers/
