@@ -12,7 +12,13 @@ import java.util.Map;
 @Data
 public class BaseProperties implements Serializable {
 
+    /**
+     * 是否启用
+     */
     private boolean enabled = true;
 
+    /**
+     * 扩展属性
+     */
     private Map<String, Object> extensions = new HashMap<>();
 }
